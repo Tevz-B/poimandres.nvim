@@ -43,7 +43,7 @@ function M.get(config)
     Folded = { fg = p.text, bg = groups.panel },
     IncSearch = { fg = p.background3, bg = p.blue2 },
     LineNr = { fg = p.blueGray3 },
-    MatchParen = { fg = p.background3, bg = p.blueGray3 },
+    MatchParen = { fg = p.teal1, bg = p.background1 },
     ModeMsg = { fg = p.blue3 },
     MoreMsg = { fg = p.blue3 },
     NonText = { fg = p.blue4 },
