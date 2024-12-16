@@ -77,6 +77,7 @@ function M.get(config)
     TabLineSel = { fg = p.text, bg = p.background1 },
     Title = { fg = p.text },
     VertSplit = { fg = groups.border, bg = styles.vert_split },
+    WinSeparator = { fg = p.background1 },
     Visual = { fg = p.text, bg = p.blueGray3 },
     -- VisualNOS = {},
     WarningMsg = { fg = p.yellow },
@@ -213,6 +214,8 @@ function M.get(config)
     -- TSFuncMacro = {},
     ['@function'] = { link = 'Function' },
     ['@function.call'] = { fg = p.blueGray1 },
+    -- make function declarations bold - to see them more clearly
+    ['@lsp.typemod.method.declaration'] = { style = 'bold' },
     TSInclude = { fg = p.blue2 },
     ['@keyword'] = { link = 'Keyword' },
     ['@keyword.return'] = { fg = p.teal2 },
@@ -358,6 +361,10 @@ function M.get(config)
     NvimTreeSpecialFile = { link = 'NvimTreeNormal' },
     NvimTreeWindowPicker = { fg = groups.bg, bg = p.blueGray1 },
 
+    -- fugitive
+    fugitiveUnstagedSection = { fg = p.blue1 },
+    fugitiveStagedSection = { fg = p.teal1 },
+
     -- folke/which-key.nvim
     WhichKey = { fg = p.text },
     WhichKeyGroup = { fg = p.text },
@@ -387,7 +394,7 @@ function M.get(config)
     CmpItemKindVariable = { fg = p.teal1 },
 
     -- ray-x/lsp_signature.nvim
-    LspSignatureActiveParameter = { bg = p.blueGray1 },
+    LspSignatureActiveParameter = { bg = p.background1 }, -- background made text unreadable
 
     -- rlane/pounce.nvim
     PounceAccept = { fg = p.pink3, bg = p.text },
@@ -397,12 +404,12 @@ function M.get(config)
 
     -- nvim-telescope/telescope.nvim
     TelescopeMatching = { fg = p.teal1 },
-    TelescopeNormal = { fg = p.text },
+    TelescopeNormal = { fg = p.text, bg = p.background3 }, -- add background
     TelescopeSelection = { fg = p.text, bg = p.background1 },
     TelescopeTitle = { fg = p.blueGray2 },
-    TelescopeBorder = { fg = p.background1 },
-    TelescopePromptBorder = { fg = p.background1 },
-    TelescopePromptNormal = { fg = p.text },
+    TelescopeBorder = { fg = p.background1, bg = p.background3 },
+    TelescopePromptBorder = { fg = p.background1, bg = p.background3 },
+    TelescopePromptNormal = { fg = p.text, bg = p.background1 },
     TelescopePromptPrefix = { fg = p.blueGray2 },
     TelescopePreviewTitle = { fg = p.background2, bg = p.teal1 },
     TelescopePromptTitle = { fg = p.background2, bg = p.blue1 },
@@ -423,6 +430,19 @@ function M.get(config)
     LeapLabelSecondary = { fg = p.background2, bg = p.blue1 },
     LeapLabelSelected = { fg = p.background2, bg = p.yellow },
     LeapBackground = { bg = p.background1 },
+
+    -- flash.nvim
+    FlashLabel = { fg = p.background3, bg = p.teal1 },
+    FlashMatch = { fg = p.blue2, bg = p.background2 },
+    FlashCurrent = { link = 'FlashMatch' },
+    -- FlashCurrent = { fg = p.text, bg = p.blueGray2 },
+    -- FlashLabel = { link = 'LeapLabelPrimary' },
+    -- FlashMatch = { link = 'LeapMatch' },
+    -- FlashCurrent = { link = 'LeapLabelSelected' },
+    -- FlashBackdrop  
+    -- FlashPrompt    
+    -- FlashPromptIcon
+    -- FlashCursor    
 
     -- rcarriga/nvim-notify
     NotifyINFOBorder = { fg = p.teal1 },
