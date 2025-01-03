@@ -531,7 +531,7 @@ function M.get(config)
   }
 
   vim.g.terminal_color_0 = p.background3 -- black
-  vim.g.terminal_color_8 = p.background3 -- bright black
+  vim.g.terminal_color_8 = p.blueGray1 -- bright black (zsh-autocmp)
   vim.g.terminal_color_1 = p.pink3 -- red
   vim.g.terminal_color_9 = p.pink3 -- bright red
   vim.g.terminal_color_2 = p.teal1 -- green
