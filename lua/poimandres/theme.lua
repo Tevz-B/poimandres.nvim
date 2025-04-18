@@ -159,6 +159,7 @@ function M.get(config)
     markdownH3 = { fg = p.blue2, style = 'bold' },
     markdownH4 = { fg = p.blue2, style = 'bold' },
     markdownLinkText = { fg = p.blue1, style = 'underline' },
+    ['@markup.list.checked.markdown'] = { fg = p.teal1 },
 
     debugPC = { bg = p.background1 }, -- used for highlighting the current line in terminal-debug
     debugBreakpoint = { bg = p.background2, fg = p.pink3 }, -- used for breakpoint colors in terminal-debug
