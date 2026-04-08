@@ -17,7 +17,7 @@ function M.get(config)
     or styles.background
 
   theme = {
-    ColorColumn = { bg = p.blueGray1 },
+    ColorColumn = { bg = p.blueGray3 },
     Conceal = { bg = p.none },
     CurSearch = { link = 'IncSearch' },
     Cursor = { fg = p.background3, bg = p.blueGray1 },
@@ -28,7 +28,7 @@ function M.get(config)
     DarkenedPanel = { bg = groups.panel },
     DarkenedStatusline = { bg = groups.panel },
     DiffAdd = { bg = blend(groups.git_add, groups.background, 0.5) },
-    DiffChange = { bg = p.blueGray1 },
+    DiffChange = { bg = p.blueGray3 },
     DiffDelete = { bg = blend(groups.git_delete, groups.background, 0.5) },
     DiffText = { bg = blend(groups.git_text, groups.background, 0.5) },
     diffAdded = { link = 'DiffAdd' },
@@ -360,7 +360,7 @@ function M.get(config)
     NvimTreeOpenedFolderName = { link = 'NvimTreeFolderName' },
     NvimTreeRootFolder = { fg = p.teal1 },
     NvimTreeSpecialFile = { link = 'NvimTreeNormal' },
-    NvimTreeWindowPicker = { fg = groups.bg, bg = p.blueGray1 },
+    NvimTreeWindowPicker = { fg = groups.bg, bg = p.blueGray3 },
 
     -- fugitive
     fugitiveUnstagedSection = { fg = p.blue1 },
