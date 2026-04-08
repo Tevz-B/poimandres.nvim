@@ -161,6 +161,8 @@ function M.get(config)
     markdownLinkText = { fg = p.blue1, style = 'underline' },
     ['@markup.list.checked.markdown'] = { fg = p.teal1 },
 
+    RenderMarkdownCode = { bg = p.background3 },
+
     debugPC = { bg = p.background1 }, -- used for highlighting the current line in terminal-debug
     debugBreakpoint = { bg = p.background2, fg = p.pink3 }, -- used for breakpoint colors in terminal-debug
     DiagnosticError = { fg = groups.error },
