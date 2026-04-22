@@ -24,27 +24,32 @@ local variants = {
   },
   light = { -- light palette
     yellow = '#d3ba00',
-    teal1 = '#43a993',
-    teal2 = '#50c6ad',
-    teal3 = '#5de4c7',
-    blue1 = '#3e475c',
-    blue2 = '#3e475c',
-    blue3 = '#7A96AD',
-    blue4 = '#91B4D5',
+    teal1 = '#5FB3A1',
+    teal2 = '#43a993',
+    teal3 = '#50c6ad',
+    blue1 = '#2363a4',
+    blue2 = '#1d558e',
+    blue3 = '#174779',
+    blue4 = '#113a64',
     pink1 = '#A84A8A',
     pink2 = '#C061A3',
     pink3 = '#8C3A6D',
     blueGray1 = '#5B6378',
     blueGray2 = '#7A8399',
     blueGray3 = '#9AA3B5',
-    background1 = '#F4F7FB',
-    background2 = '#E9EDF5',
-    background3 = '#DDE3EE',
+    background1 = '#FFFFFF',
+    background2 = '#F4F7FB',
+    background3 = '#E9EDF5',
+    background4 = '#DDE3EE',
     text = '#1F2430',
     white = '#FFFFFF',
     none = 'NONE',
   },
-
+-- #557329
+-- #768C54
+-- #D9BFA9
+-- #F2F2F2
+-- #404040
 -- Theme primary colors */
 --clr-primary-a0:  #5de4c7;
 --clr-primary-a10: #50c6ad;
