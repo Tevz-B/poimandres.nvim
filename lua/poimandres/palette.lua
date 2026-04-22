@@ -56,14 +56,15 @@ local variants = {
 --clr-surface-a20: #e4e4e4;
 }
 
-local palette = {}
+local config = require 'poimandres.config'
 
-palette = variants.light
+local function active_variant()
+  local opts = config.get()
+  return opts.light and variants.light or variants.main
+end
 
--- if vim.o.background == "light" then
--- 	palette = variants.main
--- else
--- 	palette = variants[(vim.g.poimandres_variant == "storm" and "storm") or "main"]
--- end
-
-return palette
+return setmetatable({}, {
+  __index = function(_, key)
+    return active_variant()[key]
+  end,
+})
