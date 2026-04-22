@@ -22,11 +22,43 @@ local variants = {
     white = '#FFFFFF',
     none = 'NONE',
   },
+  light = { -- light palette
+    yellow = '#d3ba00',
+    teal1 = '#43a993',
+    teal2 = '#50c6ad',
+    teal3 = '#5de4c7',
+    blue1 = '#3e475c',
+    blue2 = '#3e475c',
+    blue3 = '#7A96AD',
+    blue4 = '#91B4D5',
+    pink1 = '#A84A8A',
+    pink2 = '#C061A3',
+    pink3 = '#8C3A6D',
+    blueGray1 = '#5B6378',
+    blueGray2 = '#7A8399',
+    blueGray3 = '#9AA3B5',
+    background1 = '#F4F7FB',
+    background2 = '#E9EDF5',
+    background3 = '#DDE3EE',
+    text = '#1F2430',
+    white = '#FFFFFF',
+    none = 'NONE',
+  },
+
+-- Theme primary colors */
+--clr-primary-a0:  #5de4c7;
+--clr-primary-a10: #50c6ad;
+--clr-primary-a20: #43a993;
+
+-- Theme surface colors */
+--clr-surface-a0: #fff;
+--clr-surface-a10: #f2f2f2;
+--clr-surface-a20: #e4e4e4;
 }
 
 local palette = {}
 
-palette = variants.main
+palette = variants.light
 
 -- if vim.o.background == "light" then
 -- 	palette = variants.main

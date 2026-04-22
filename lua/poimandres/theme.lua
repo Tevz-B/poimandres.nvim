@@ -3,13 +3,7 @@ local blend = require('poimandres.utils').blend
 local M = {}
 
 function M.get(config)
-  local p = nil
-  if config.light then
-    p = require 'poimandres.palettelight'
-  else
-    p = require 'poimandres.palette'
-  end
-
+  local p = require 'poimandres.palette'
   local theme = {}
   local groups = config.groups or {}
   local styles = {
