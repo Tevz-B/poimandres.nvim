@@ -14,10 +14,12 @@ function M.colorscheme()
   end
 
   vim.opt.termguicolors = true
-  vim.g.colors_name = 'poimandres'
+  local scheme = vim.g.poimandres_scheme or 'poimandres'
+  vim.g.colors_name = scheme
 
   local opts = config.get()
-  local theme = require('poimandres.theme').get(opts)
+  local theme_mod = (scheme == 'poimandres-light') and 'poimandres.theme-light' or 'poimandres.theme'
+  local theme = require(theme_mod).get(opts)
 
   -- Set theme highlights
   for group, color in pairs(theme) do

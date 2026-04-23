@@ -7,7 +7,6 @@ local defaults = {
   disable_float_background = false,
   disable_italics = false,
   dim_nc_background = false,
-  light = false,
 
   groups = {
     background = 'background2',

@@ -146,8 +146,14 @@ require('poimandres').setup {
   disable_background = false, -- disable background
   disable_float_background = false, -- disable background for floats
   disable_italics = false, -- disable italics
-  light = false, -- use light variant
 }
+```
+
+Use one of the exposed themes:
+
+```lua
+vim.cmd('colorscheme poimandres') -- dark
+vim.cmd('colorscheme poimandres-light') -- light
 ```
 
 To enable Poimandres for `Lualine`, just set the theme in your Lualine configuration:
