@@ -27,7 +27,7 @@ function M.get(config)
     DarkenedPanel = { bg = groups.panel },
     DarkenedStatusline = { bg = groups.panel },
     DiffAdd = { bg = blend(groups.git_add, groups.background, 0.5) },
-    DiffChange = { bg = p.blueGray3 },
+    DiffChange = { bg = p.lightblue },
     DiffDelete = { bg = blend(groups.git_delete, groups.background, 0.5) },
     DiffText = { bg = blend(groups.git_text, groups.background, 0.5) },
     diffAdded = { link = 'DiffAdd' },
@@ -40,9 +40,9 @@ function M.get(config)
     FloatTitle = { fg = p.blueGray2 },
     FoldColumn = { fg = p.blueGray2 },
     Folded = { fg = p.text, bg = groups.panel },
-    IncSearch = { fg = p.background3, bg = p.blue2 },
+    IncSearch = { fg = p.text, bg = p.blue1 },
     LineNr = { fg = p.blueGray3 },
-    MatchParen = { fg = p.teal1, bg = p.blueGray3 },
+    MatchParen = { fg = p.text, bg = p.teal3 },
     ModeMsg = { fg = p.blue3 },
     MoreMsg = { fg = p.blue3 },
     NonText = { fg = p.blue4 },
@@ -60,7 +60,7 @@ function M.get(config)
     RedrawDebugClear = { fg = '#ffffff', bg = p.yellow },
     RedrawDebugComposed = { fg = '#ffffff', bg = p.teal2 },
     RedrawDebugRecompose = { fg = '#ffffff', bg = p.pink3 },
-    Search = { fg = p.white, bg = p.blueGray3 },
+    Search = { fg = p.text, bg = p.lightblue },
     SpecialKey = { fg = p.teal1 },
     SpellBad = { sp = p.pink3, style = 'undercurl' },
     SpellCap = { sp = p.blue1, style = 'undercurl' },
@@ -77,7 +77,7 @@ function M.get(config)
     Title = { fg = p.text },
     VertSplit = { fg = groups.border, bg = styles.vert_split },
     WinSeparator = { fg = p.background1 },
-    Visual = { fg = p.text, bg = p.blueGray3 },
+    Visual = { fg = p.text, bg = p.lightblue },
     -- VisualNOS = {},
     WarningMsg = { fg = p.yellow },
     Whitespace = { fg = p.blueGray3 },
@@ -97,7 +97,7 @@ function M.get(config)
     Float = { fg = p.teal1 }, --    a floating point constant: 2.3e10
 
     Identifier = { fg = p.blueGray1 }, -- (preferred) any variable name
-    Function = { fg = p.blue2 }, -- function name (also: methods for classes)
+    Function = { fg = p.blue2, style = 'bold' }, -- function name (also: methods for classes)
 
     Statement = { fg = p.text }, -- (preferred) any statement
     Conditional = { fg = p.blueGray1 }, --  if, then, else, endif, switch, etc.
@@ -113,7 +113,7 @@ function M.get(config)
     -- Macro         = { }, --    same as Define
     -- PreCondit     = { }, --  preprocessor #if, #else, #endif, etc.
 
-    Type = { fg = p.blueGray1 }, -- (preferred) int, long, char, etc.
+    Type = { fg = p.blueGray3 }, -- (preferred) int, long, char, etc.
     --[[ Structure = { fg = p.blueGray1 }, --  struct, union, enum, etc. ]]
     -- StorageClass  = { }, -- static, register, volatile, etc.
     -- Typedef = { fg = p.blueGray1 }, --  A typedef
@@ -143,6 +143,13 @@ function M.get(config)
     htmlH1 = { fg = p.teal1, style = 'bold' },
     htmlH2 = { fg = p.teal1, style = 'bold' },
 
+    -- Markdown
+    RenderMarkdownH1Bg = { bg = p.teal3 },
+    RenderMarkdownH2Bg = { bg = p.lightblue },
+    RenderMarkdownH3Bg = { bg = p.lightblue },
+    RenderMarkdownH4Bg = { bg = p.lightblue },
+    RenderMarkdownH5Bg = { bg = p.lightblue },
+    RenderMarkdownH6Bg = { bg = p.lightblue },
     -- mkdHeading = { fg = c.orange, style = "bold" },
     -- mkdCode = { bg = c.terminal_black, fg = c.fg },
     mkdCodeDelimiter = { bg = p.background3, fg = p.text },
@@ -220,7 +227,7 @@ function M.get(config)
     ['@lsp.typemod.method.declaration'] = { style = 'bold' },
     TSInclude = { fg = p.blue2 },
     ['@keyword'] = { link = 'Keyword' },
-    ['@keyword.return'] = { fg = p.teal2 },
+    ['@keyword.return'] = { fg = p.teal2, style = 'bold' },
     ['@keyword.function'] = { fg = p.blue2 },
     ['@keyword.operator'] = { fg = p.teal1 },
     ['@label'] = { fg = p.blue3 },
