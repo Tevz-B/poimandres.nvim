@@ -1,5 +1,5 @@
 return {
-  yellow = '#d3ba00',
+  yellow = '#E18800',
   teal1 = '#2F8371',
   teal2 = '#43A993',
   teal3 = '#5DE4C7',
