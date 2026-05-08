@@ -18,7 +18,7 @@ function M.colorscheme()
   vim.g.colors_name = scheme
 
   local opts = config.get()
-  local theme_mod = (scheme == 'poimandres-light') and 'poimandres.theme-light' or 'poimandres.theme'
+  local theme_mod = (scheme:match("^poimandres%-light") ~= nil) and 'poimandres.theme-light' or 'poimandres.theme'
   local theme = require(theme_mod).get(opts)
 
   -- Set theme highlights

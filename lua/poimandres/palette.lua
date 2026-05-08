@@ -9,6 +9,8 @@ local function active_palette()
     return require('poimandres.palette-light-b')
   elseif active_scheme() == 'poimandres-light-c' then
     return require('poimandres.palette-light-c')
+  elseif active_scheme() == 'poimandres-light-d' then
+    return require('poimandres.palette-light-d')
   end
   return require('poimandres.palette-dark')
 end
