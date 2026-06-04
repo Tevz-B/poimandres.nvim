@@ -22,7 +22,7 @@ function M.get(config)
     Cursor = { fg = p.background3, bg = p.blueGray1 },
     CursorColumn = { bg = p.background1 },
     -- CursorIM = {},
-    CursorLine = { bg = p.background1 },
+    CursorLine = { bg = p.background4 },
     CursorLineNr = { fg = p.text },
     DarkenedPanel = { bg = groups.panel },
     DarkenedStatusline = { bg = groups.panel },
