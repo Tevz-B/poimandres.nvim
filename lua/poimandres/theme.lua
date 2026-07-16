@@ -118,7 +118,7 @@ function M.get(config)
     -- StorageClass  = { }, -- static, register, volatile, etc.
     -- Typedef = { fg = p.blueGray1 }, --  A typedef
 
-    Special = { fg = p.blue1 }, -- (preferred) any special symbol
+    Special = { fg = p.blue2 }, -- (preferred) any special symbol
     -- SpecialChar   = { }, --  special character in a constant
     Tag = { fg = p.text }, --    you can use CTRL-] on this
     Delimiter = { fg = p.blueGray1 }, --  character that needs attention
