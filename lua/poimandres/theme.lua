@@ -530,6 +530,10 @@ function M.get(config)
     -- Float term
     TerminalBorder = { link = 'SagaBorder' },
     TerminalNormal = { link = 'SagaNormal' },
+    -- logistix
+    label_2_1 = { fg = p.blue1 },
+    label_2_2 = { fg = p.teal1 },
+    label_3_1 = { fg = p.teal2 },
   }
 
   vim.g.terminal_color_0 = p.background3 -- black
